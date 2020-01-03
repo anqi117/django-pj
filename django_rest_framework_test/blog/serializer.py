@@ -12,7 +12,6 @@ class UserSerializer(serializers.ModelSerializer):
 class EntrySerializer(serializers.ModelSerializer):
     # authorのserializerを上書き
     author = UserSerializer()
-    title = 'aaaaaa'
 
     class Meta:
         model = Entry
